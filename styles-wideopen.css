@@ -6,10 +6,76 @@ html, body {
 	margin: 0;
 }
 
+/* Colors: Light gray: #F0F0F0; green: #BDD537; Dark gray: #788488; 
+opaque gray: #333D40; Orange: #ff803a;
+*/
+
+
 .container {
 	font-family: Arial;	
-	max-width: 70%;
+	max-width: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 0px;
+}
+
+.dudeBox {
+	width: 100%;
+	height: 500px;
+	background-image: url('computerdude.jpg');
+	background-image: cover;
+}
+
+.header {
+	display: block;
+	text-transform: uppercase;
+	color: white;
+    font-family: Arial;
+    font-size: 25px;
+    width: 0 auto;
+ }
+
+.header img {
+	margin-right: 50px;
+	height: 70px;
+	width: auto;
+	display: inline-block;
+}
+ 
+.services {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+}
+
+.company {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+}
+
+.portfolio {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+}
+
+.careers {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+}
+
+.blog {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+}
+
+.contact {
+	background-color: #BDD537;
+	border-radius: 15px;
+	height: 50px;
+	width: 100px;
+	display: inline-block;
 }
 
