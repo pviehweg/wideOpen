@@ -2,8 +2,8 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 /* Colors: Light gray: #F0F0F0; green: #BDD537; Dark gray: #788488; 
@@ -19,63 +19,202 @@ opaque gray: #333D40; Orange: #ff803a;
 }
 
 .dudeBox {
-	width: 100%;
-	height: 500px;
-	background-image: url('computerdude.jpg');
-	background-image: cover;
+	position: absolute;
+    width: 100%;
+    height: 600px;
+    background: url('computerdude.jpg') center bottom;
+    content: " ";
+    top: 0;
+    z-index: -1;
+    background-size: cover;
 }
 
-.header {
-	display: block;
-	text-transform: uppercase;
-	color: white;
-    font-family: Arial;
-    font-size: 25px;
-    width: 0 auto;
+.headerBar {
+	max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    font-family: sans-serif;
+    display: block;
+    text-align: justify;
+  }
+
+.logo {
+	display: inline-block;
+	padding-top: 22px;
+    max-width: 240px;
+    height: auto;
+    display: block;
+    float: left;
  }
 
-.header img {
-	margin-right: 50px;
-	height: 70px;
-	width: auto;
+ .logo img {
+ 	max-width: 230px;
+ }
+
+.header {
+	padding-top: 22px;
 	display: inline-block;
-}
- 
+	text-align: justify;
+	color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+    float: right;
+ }
+
+.header:hover { color: #bdd537; }
+.services:hover {color: #bdd537}
+
 .services {
 	height: 20px;
-	width: auto;
+	width: 130px;
 	display: inline-block;
 }
 
 .company {
 	height: 20px;
-	width: auto;
+	width: 130px;
 	display: inline-block;
 }
 
 .portfolio {
 	height: 20px;
-	width: auto;
+	width: 150px;
 	display: inline-block;
 }
 
 .careers {
 	height: 20px;
-	width: auto;
+	width: 130px;
 	display: inline-block;
 }
 
 .blog {
 	height: 20px;
-	width: auto;
-	display: inline-block;
-}
-
-.contact {
-	background-color: #BDD537;
-	border-radius: 15px;
-	height: 50px;
 	width: 100px;
 	display: inline-block;
 }
 
+.contact {
+	display: inline-block;
+	background-color: #BDD537;
+    padding: 15px 34px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+}
+
+.lowerWords {
+	letter-spacing: 1px;
+    max-width: 900px;
+    display: block;
+    margin:0 auto;
+    color: white;
+    clear: both;
+    margin-top: 180px;
+
+}
+
+.notbtn {
+	clear: both;
+	font-family: sans-serif;
+}
+
+.top {
+	font-size: 28px;
+	margin-left: -60px;
+}
+
+.main {
+	font-size: 200px;
+	text-align: center;
+	margin-bottom: 0px;
+    margin-top: -20px;
+}
+
+.stripe {
+	display: block;
+	width: 0 auto;
+	text-decoration: none;
+	font-family: sans-serif;
+	max-width: 900px;
+}
+
+.bstripe {
+	display: inline-block;
+	background-color: white;
+	height: 12px;
+	width: 120px;
+	margin-right: 30px;
+	margin-left: 40px;
+}
+
+.sub {
+	font-size: 24px;
+	text-align: center;
+	display: inline-block;
+}
+
+.sub em {
+	color: #ff803a;
+	text-decoration: none;
+}
+
+.sub i {
+	color: #BDD537;
+	text-decoration: none;
+}
+
+.astripe {
+	display: inline-block;
+	background-color: white;
+	height: 12px;
+	width: 120px;
+	margin-left: 30px;
+}
+
+.learnBtn {
+	margin: 0 auto;
+	max-width: 200px;
+	font-family: sans-serif;
+	display: block;
+	background-color: #BDD537;
+    padding: 13px 7px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+@media (max-width: 1000px){
+	.header {
+		visibility: none;
+		/*padding-top: 22px;
+		display: inline-block;
+		text-align: justify;
+		color: #fff;
+	    text-transform: uppercase;
+	    font-size: 20px;
+	    font-weight: 300;
+	    text-decoration: none;
+	    letter-spacing: 1px;
+	    float: right;*/
+	}
+}
